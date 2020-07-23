@@ -1,0 +1,4 @@
+# UIKitPreviewSample
+UIKitで作ったビューのプレビューを試してみた。
+
+レイアウトにはSnapKitを使ったけど問題なくプレビューできている
