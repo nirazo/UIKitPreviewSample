@@ -15,6 +15,7 @@
 		D2112BD924C97D5300651A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2112BD724C97D5300651A25 /* LaunchScreen.storyboard */; };
 		D2112BE224C97F5900651A25 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2112BE124C97F5900651A25 /* SnapKit */; };
 		D2112BE424C97F9100651A25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2112BE324C97F9100651A25 /* MainView.swift */; };
+		D2112BE624C9875500651A25 /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2112BE524C9875500651A25 /* LabelsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D2112BD824C97D5300651A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2112BDA24C97D5300651A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2112BE324C97F9100651A25 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D2112BE524C9875500651A25 /* LabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				D2112BCE24C97D4D00651A25 /* SceneDelegate.swift */,
 				D2112BD024C97D4D00651A25 /* ViewController.swift */,
 				D2112BE324C97F9100651A25 /* MainView.swift */,
+				D2112BE524C9875500651A25 /* LabelsView.swift */,
 				D2112BD224C97D4D00651A25 /* Main.storyboard */,
 				D2112BD524C97D5300651A25 /* Assets.xcassets */,
 				D2112BD724C97D5300651A25 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2112BD124C97D4D00651A25 /* ViewController.swift in Sources */,
+				D2112BE624C9875500651A25 /* LabelsView.swift in Sources */,
 				D2112BE424C97F9100651A25 /* MainView.swift in Sources */,
 				D2112BCD24C97D4D00651A25 /* AppDelegate.swift in Sources */,
 				D2112BCF24C97D4D00651A25 /* SceneDelegate.swift in Sources */,

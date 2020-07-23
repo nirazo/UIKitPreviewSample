@@ -24,27 +24,29 @@ class MainView: UIView {
 
     private let label1: UILabel = {
        let label = UILabel()
-        label.text = "Label1"
+        label.text = "MainViewのラベル1"
         label.textColor = .black
-        label.font = .systemFont(ofSize: 16)
+        label.font = .systemFont(ofSize: 15)
         return label
     }()
     
     private let label2: UILabel = {
        let label = UILabel()
-        label.text = "Label2"
+        label.text = "MainViewのラベル2"
         label.textColor = .red
-        label.font = .systemFont(ofSize: 20)
+        label.font = .systemFont(ofSize: 16)
         return label
     }()
     
     private let label3: UILabel = {
        let label = UILabel()
-        label.text = "Label3"
+        label.text = "MainViewのラベル3"
         label.textColor = .blue
-        label.font = .systemFont(ofSize: 24)
+        label.font = .systemFont(ofSize: 12)
         return label
     }()
+    
+    private let labelsView = LabelsView()
     
     init() {
         super.init(frame: .zero)
@@ -52,6 +54,7 @@ class MainView: UIView {
         addSubview(label1)
         addSubview(label2)
         addSubview(label3)
+        addSubview(labelsView)
         setupConstraints()
     }
     
@@ -63,21 +66,26 @@ class MainView: UIView {
         label1.snp.makeConstraints { make in
             make.top.left.equalToSuperview().inset(50)
             make.height.equalTo(50)
-            make.width.equalTo(100)
+            make.width.equalTo(200)
         }
         
         label2.snp.makeConstraints { make in
             make.top.equalTo(label1.snp.bottom).offset(50)
             make.left.equalTo(label1)
             make.height.equalTo(50)
-            make.width.equalTo(100)
+            make.width.equalTo(150)
         }
         
         label3.snp.makeConstraints { make in
             make.top.equalTo(label2.snp.bottom).offset(100)
             make.left.equalTo(label2).offset(30)
             make.height.equalTo(50)
-            make.width.equalTo(100)
+            make.width.equalTo(150)
+        }
+        
+        labelsView.snp.makeConstraints { make in
+            make.top.equalTo(label3.snp.bottom).offset(20)
+            make.left.right.equalToSuperview().inset(8)
         }
     }
 }
